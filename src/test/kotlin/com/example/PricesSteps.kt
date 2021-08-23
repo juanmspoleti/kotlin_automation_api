@@ -3,11 +3,9 @@ package com.example
 import com.example.core.api.ResponseHandler
 import com.example.core.api.criptoya.CoinPrice
 import com.example.core.api.criptoya.CriptoyaRepository
-import com.google.common.reflect.TypeToken
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
 import org.testng.Assert
-import java.lang.reflect.Type
 
 class PricesSteps {
     private val criptoyaRepository: CriptoyaRepository by lazy { CriptoyaRepository() }
