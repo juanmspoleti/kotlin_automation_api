@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.4.10</kotlin.version>
+        <kotlin.version>1.7.22</kotlin.version>
         <testng.version>7.0.0</testng.version>
         <cucumber.version>4.8.1</cucumber.version>
         <retrofit.version>2.9.0</retrofit.version>
@@ -22,6 +22,9 @@
     <profiles>
         <profile>
             <id>runner</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <cucumber.options>src/test/resources/features -g com.example ${cucumber.filter} -t 'not @Bug' -p 'pretty'</cucumber.options>
             </properties>
